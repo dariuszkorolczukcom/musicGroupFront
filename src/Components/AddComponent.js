@@ -9,7 +9,7 @@ const AddComponent = (props) => {
         {props.add && 
             <React.Fragment>
                 <div className="modal-content">
-                    <span onClick={() => props.setEdit()} className="close">&times;</span>
+                    <span onClick={() => props.setAdd()} className="close">&times;</span>
                     <h2>Add Preset</h2>
                     <table>
                         <tbody>
