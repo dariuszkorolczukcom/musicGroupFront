@@ -47,7 +47,7 @@ const App = () => {
     }, []);
 
     const getAllPresets = () => {
-        fetch("http://localhost:8080/presets")
+        fetch("http://http://54.77.253.19/:8080/presets")
         .then(res => res.json())
         .then(
           (result) => {
@@ -62,7 +62,7 @@ const App = () => {
     }
 
     const createPreset = (data) => {
-        fetch("http://localhost:8080/presets", {
+        fetch("http://http://54.77.253.19/:8080/presets", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json;charset=utf-8'
@@ -84,7 +84,7 @@ const App = () => {
     }
 
     const editPreset = (data) => {
-        fetch("http://localhost:8080/presets/"+data.id, {
+        fetch("http://http://54.77.253.19/:8080/presets/"+data.id, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json;charset=utf-8'
@@ -107,7 +107,7 @@ const App = () => {
     }
 
     const deletePreset = (id) => {
-        fetch("http://localhost:8080/presets/"+id, {
+        fetch("http://http://54.77.253.19/:8080/presets/"+id, {
             method: 'DELETE'
           })
         .then(res => res.json())
