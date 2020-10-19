@@ -3,3 +3,5 @@
 3. yarn install
 4. yarn build
 5. yarn start
+
+it requires node v12 and yarn/npm
